@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/enterDetailsFragment">
+
+    <fragment
+        android:id="@+id/enterDetailsFragment"
+        android:name="com.example.youtubeplayerapp.EnterDetailsFragment"
+        android:label="EnterDetailsFragment" >
+        <action
+            android:id="@+id/action_enterDetailsFragment_to_formFragment"
+            app:destination="@id/formFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment"
+        android:name="com.example.youtubeplayerapp.FormFragment"
+        android:label="FormFragment" />
+</navigation>
